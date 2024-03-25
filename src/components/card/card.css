@@ -1,0 +1,121 @@
+.container{
+    background-color: #15263f;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 24px 24px 32px;
+}
+.img-container{
+    position: relative;
+    display: inline-block;
+}
+
+.equilibrium{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 302px;
+    height: 302px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .overlay {
+    background: url(../../../public/images/icon-view.svg) rgba(0, 255, 248,0.5) no-repeat center center;
+    border-radius: 8px;
+}
+
+.title{
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 600;
+    margin:24px 0 16px 0 ;
+}
+
+.title:hover, .avatar span:hover{
+    cursor: pointer;
+    color: #00fff8;
+}
+
+.description{
+    color: #92A6C7;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 24px 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;   
+}
+
+
+.ethereum,.clock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6.5px; 
+}
+
+.ethereum img{
+    width: 14px;
+    height: 23px;
+}
+
+.clock img{
+    width: 17px;
+    height: 17px;
+}
+
+
+.ethereum span{
+    color: #00FFF8;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    }
+
+.clock span{
+    font-size: 16px;
+    color: #8bacd9;
+    font-weight: normal;
+}
+
+hr{
+    height: 1px;
+    background-color: #2e405a;
+    margin: 0 0 17.5px 0;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: auto;
+}
+    
+.avatar img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+}
+.avatar p{
+    display: inline-block;
+    color: #92A6C7;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 16px;
+}
+    
+.avatar span{
+    color: #FFF;
+}
